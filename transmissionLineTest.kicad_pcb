@@ -443,10 +443,10 @@
   (gr_text "50 Ohm" (at 122.555 50.165) (layer F.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
-  (gr_line (start 170 35) (end 110 35) (layer Edge.Cuts) (width 0.05) (tstamp 603F60D9))
-  (gr_line (start 170 70) (end 170 35) (layer Edge.Cuts) (width 0.05))
-  (gr_line (start 110 70) (end 170 70) (layer Edge.Cuts) (width 0.05))
-  (gr_line (start 110 35) (end 110 70) (layer Edge.Cuts) (width 0.05))
+  (gr_line (start 168.5 35) (end 110 35) (layer Edge.Cuts) (width 0.05) (tstamp 603F60D9))
+  (gr_line (start 168.5 69) (end 168.5 35) (layer Edge.Cuts) (width 0.05))
+  (gr_line (start 110 69) (end 168.5 69) (layer Edge.Cuts) (width 0.05))
+  (gr_line (start 110 35) (end 110 69) (layer Edge.Cuts) (width 0.05))
   (gr_text "33 Ohm" (at 122.555 38.735) (layer F.SilkS) (tstamp 603F634E)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
@@ -536,12 +536,12 @@
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
     (polygon
       (pts
-        (xy 169.5 69.5) (xy 110.5 69.5) (xy 110.5 35.5) (xy 169.5 35.5)
+        (xy 168 68.5) (xy 110.5 68.5) (xy 110.5 35.5) (xy 168 35.5)
       )
     )
     (filled_polygon
       (pts
-        (xy 169.34 69.34) (xy 110.66 69.34) (xy 110.66 35.66) (xy 169.340001 35.66)
+        (xy 167.873 68.34) (xy 110.66 68.34) (xy 110.66 35.66) (xy 167.873 35.66)
       )
     )
   )
