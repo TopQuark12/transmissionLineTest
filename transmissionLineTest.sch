@@ -1,4 +1,392 @@
-EESchema Schematic File Version 2
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR01
+U 1 1 603F57A5
+P 2050 2250
+F 0 "#PWR01" H 2050 2000 50  0001 C CNN
+F 1 "GND" H 2055 2077 50  0000 C CNN
+F 2 "" H 2050 2250 50  0001 C CNN
+F 3 "" H 2050 2250 50  0001 C CNN
+	1    2050 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NO_Small JP1
+U 1 1 603FC60C
+P 3600 2050
+F 0 "JP1" H 3600 2143 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 3600 2144 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 3600 2050 50  0001 C CNN
+F 3 "~" H 3600 2050 50  0001 C CNN
+	1    3600 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 603FCE6A
+P 3700 2250
+F 0 "#PWR04" H 3700 2000 50  0001 C CNN
+F 1 "GND" H 3705 2077 50  0000 C CNN
+F 2 "" H 3700 2250 50  0001 C CNN
+F 3 "" H 3700 2250 50  0001 C CNN
+	1    3700 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 2050 3700 2250
+Wire Wire Line
+	2250 2050 3500 2050
+$Comp
+L power:GND #PWR02
+U 1 1 604007FA
+P 2050 3250
+F 0 "#PWR02" H 2050 3000 50  0001 C CNN
+F 1 "GND" H 2055 3077 50  0000 C CNN
+F 2 "" H 2050 3250 50  0001 C CNN
+F 3 "" H 2050 3250 50  0001 C CNN
+	1    2050 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NO_Small JP2
+U 1 1 60400800
+P 3600 3050
+F 0 "JP2" H 3600 3143 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 3600 3144 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 3600 3050 50  0001 C CNN
+F 3 "~" H 3600 3050 50  0001 C CNN
+	1    3600 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 60400806
+P 3700 3250
+F 0 "#PWR05" H 3700 3000 50  0001 C CNN
+F 1 "GND" H 3705 3077 50  0000 C CNN
+F 2 "" H 3700 3250 50  0001 C CNN
+F 3 "" H 3700 3250 50  0001 C CNN
+	1    3700 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 3050 3700 3250
+Wire Wire Line
+	2250 3050 3500 3050
+$Comp
+L power:GND #PWR03
+U 1 1 604014C0
+P 2050 4250
+F 0 "#PWR03" H 2050 4000 50  0001 C CNN
+F 1 "GND" H 2055 4077 50  0000 C CNN
+F 2 "" H 2050 4250 50  0001 C CNN
+F 3 "" H 2050 4250 50  0001 C CNN
+	1    2050 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NO_Small JP3
+U 1 1 604014C6
+P 3600 4050
+F 0 "JP3" H 3600 4143 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 3600 4144 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 3600 4050 50  0001 C CNN
+F 3 "~" H 3600 4050 50  0001 C CNN
+	1    3600 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 604014CC
+P 3700 4250
+F 0 "#PWR06" H 3700 4000 50  0001 C CNN
+F 1 "GND" H 3705 4077 50  0000 C CNN
+F 2 "" H 3700 4250 50  0001 C CNN
+F 3 "" H 3700 4250 50  0001 C CNN
+	1    3700 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 4050 3700 4250
+Wire Wire Line
+	2250 4050 3500 4050
+Text Notes 2400 1550 0    100  ~ 20
+Single Ended
+Wire Bus Line
+	1500 1000 1500 5000
+Wire Bus Line
+	1500 5000 4250 5000
+Wire Bus Line
+	4250 5000 4250 1000
+Wire Bus Line
+	4250 1000 1500 1000
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 6041EB80
+P 2050 2250
+F 0 "#FLG0101" H 2050 2325 50  0001 C CNN
+F 1 "PWR_FLAG" H 2050 2423 50  0001 C CNN
+F 2 "" H 2050 2250 50  0001 C CNN
+F 3 "~" H 2050 2250 50  0001 C CNN
+	1    2050 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L symbols:Conn_01x01_Shielded J1
+U 1 1 6043502E
+P 2050 2050
+F 0 "J1" H 1972 2265 50  0000 C CNN
+F 1 "U.FL" H 1972 2174 50  0000 C CNN
+F 2 "Connector_Coaxial:U.FL_Hirose_U.FL-R-SMT-1_Vertical" H 2050 2050 50  0001 C CNN
+F 3 "~" H 2050 2050 50  0001 C CNN
+	1    2050 2050
+	-1   0    0    -1  
+$EndComp
+Connection ~ 2050 2250
+$Comp
+L symbols:Conn_01x01_Shielded J2
+U 1 1 60437CDF
+P 2050 3050
+F 0 "J2" H 1972 3265 50  0000 C CNN
+F 1 "U.FL" H 1972 3174 50  0000 C CNN
+F 2 "Connector_Coaxial:U.FL_Hirose_U.FL-R-SMT-1_Vertical" H 2050 3050 50  0001 C CNN
+F 3 "~" H 2050 3050 50  0001 C CNN
+	1    2050 3050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L symbols:Conn_01x01_Shielded J3
+U 1 1 60438586
+P 2050 4050
+F 0 "J3" H 1972 4265 50  0000 C CNN
+F 1 "U.FL" H 1972 4174 50  0000 C CNN
+F 2 "Connector_Coaxial:U.FL_Hirose_U.FL-R-SMT-1_Vertical" H 2050 4050 50  0001 C CNN
+F 3 "~" H 2050 4050 50  0001 C CNN
+	1    2050 4050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 60445882
+P 6150 2450
+F 0 "#PWR07" H 6150 2200 50  0001 C CNN
+F 1 "GND" H 6155 2277 50  0000 C CNN
+F 2 "" H 6150 2450 50  0001 C CNN
+F 3 "" H 6150 2450 50  0001 C CNN
+	1    6150 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NO_Small JP6
+U 1 1 60445888
+P 8950 2150
+F 0 "JP6" V 8950 2243 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 8950 2244 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 8950 2150 50  0001 C CNN
+F 3 "~" H 8950 2150 50  0001 C CNN
+	1    8950 2150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Transformer:ADT1-1WT TR1
+U 1 1 6044E273
+P 6700 2250
+F 0 "TR1" H 6700 2550 50  0000 C CNN
+F 1 "ADT1-1WT+" H 6700 1950 50  0000 C CNN
+F 2 "RF_Mini-Circuits:Mini-Circuits_CD542_H2.84mm" H 6700 1900 50  0001 C CNN
+F 3 "https://www.minicircuits.com/pdfs/ADT1-1WT+.pdf" H 6700 2250 50  0001 C CNN
+	1    6700 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 2450 6500 2450
+Connection ~ 6150 2450
+$Comp
+L symbols:Conn_01x01_Shielded J4
+U 1 1 6044589D
+P 6150 2050
+F 0 "J4" H 6072 2265 50  0000 C CNN
+F 1 "U.FL" H 6072 2174 50  0000 C CNN
+F 2 "Connector_Coaxial:U.FL_Hirose_U.FL-R-SMT-1_Vertical" H 6150 2050 50  0001 C CNN
+F 3 "~" H 6150 2050 50  0001 C CNN
+	1    6150 2050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 2250 6150 2450
+Wire Wire Line
+	6350 2050 6500 2050
+$Comp
+L power:GND #PWR09
+U 1 1 6045D562
+P 6950 2250
+F 0 "#PWR09" H 6950 2000 50  0001 C CNN
+F 1 "GND" V 6955 2122 50  0000 R CNN
+F 2 "" H 6950 2250 50  0001 C CNN
+F 3 "" H 6950 2250 50  0001 C CNN
+	1    6950 2250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6900 2250 6950 2250
+$Comp
+L Device:Jumper_NO_Small JP7
+U 1 1 60469EEA
+P 8950 2350
+F 0 "JP7" V 8950 2443 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 8950 2444 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 8950 2350 50  0001 C CNN
+F 3 "~" H 8950 2350 50  0001 C CNN
+	1    8950 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR011
+U 1 1 6046A99E
+P 9000 2250
+F 0 "#PWR011" H 9000 2000 50  0001 C CNN
+F 1 "GND" V 9005 2122 50  0000 R CNN
+F 2 "" H 9000 2250 50  0001 C CNN
+F 3 "" H 9000 2250 50  0001 C CNN
+	1    9000 2250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8950 2250 9000 2250
+Connection ~ 8950 2250
+$Comp
+L power:GND #PWR08
+U 1 1 60476064
+P 6150 3650
+F 0 "#PWR08" H 6150 3400 50  0001 C CNN
+F 1 "GND" H 6155 3477 50  0000 C CNN
+F 2 "" H 6150 3650 50  0001 C CNN
+F 3 "" H 6150 3650 50  0001 C CNN
+	1    6150 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NO_Small JP8
+U 1 1 6047606A
+P 8950 3350
+F 0 "JP8" V 8950 3443 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 8950 3444 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 8950 3350 50  0001 C CNN
+F 3 "~" H 8950 3350 50  0001 C CNN
+	1    8950 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Transformer:ADT1-1WT TR2
+U 1 1 60476070
+P 6700 3450
+F 0 "TR2" H 6700 3750 50  0000 C CNN
+F 1 "ADT1-1WT+" H 6700 3150 50  0000 C CNN
+F 2 "RF_Mini-Circuits:Mini-Circuits_CD542_H2.84mm" H 6700 3100 50  0001 C CNN
+F 3 "https://www.minicircuits.com/pdfs/ADT1-1WT+.pdf" H 6700 3450 50  0001 C CNN
+	1    6700 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 3650 6500 3650
+Connection ~ 6150 3650
+$Comp
+L symbols:Conn_01x01_Shielded J5
+U 1 1 60476078
+P 6150 3250
+F 0 "J5" H 6072 3465 50  0000 C CNN
+F 1 "U.FL" H 6072 3374 50  0000 C CNN
+F 2 "Connector_Coaxial:U.FL_Hirose_U.FL-R-SMT-1_Vertical" H 6150 3250 50  0001 C CNN
+F 3 "~" H 6150 3250 50  0001 C CNN
+	1    6150 3250
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 3450 6150 3650
+Wire Wire Line
+	6350 3250 6500 3250
+$Comp
+L power:GND #PWR010
+U 1 1 60476080
+P 6950 3450
+F 0 "#PWR010" H 6950 3200 50  0001 C CNN
+F 1 "GND" V 6955 3322 50  0000 R CNN
+F 2 "" H 6950 3450 50  0001 C CNN
+F 3 "" H 6950 3450 50  0001 C CNN
+	1    6950 3450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6900 3450 6950 3450
+$Comp
+L Device:Jumper_NO_Small JP9
+U 1 1 60476087
+P 8950 3550
+F 0 "JP9" V 8950 3643 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 8950 3644 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 8950 3550 50  0001 C CNN
+F 3 "~" H 8950 3550 50  0001 C CNN
+	1    8950 3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR012
+U 1 1 6047608D
+P 9000 3450
+F 0 "#PWR012" H 9000 3200 50  0001 C CNN
+F 1 "GND" V 9005 3322 50  0000 R CNN
+F 2 "" H 9000 3450 50  0001 C CNN
+F 3 "" H 9000 3450 50  0001 C CNN
+	1    9000 3450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8950 3450 9000 3450
+Connection ~ 8950 3450
+Text Label 7650 2050 0    50   ~ 0
+120ohm_P
+Text Label 7650 2450 0    50   ~ 0
+120ohm_N
+Text Label 7700 3250 0    50   ~ 0
+100ohm_P
+Text Label 7700 3650 0    50   ~ 0
+100ohm_N
+Text Label 2750 2050 0    50   ~ 0
+33ohm
+Text Label 2750 3050 0    50   ~ 0
+50ohm
+Text Label 2750 4050 0    50   ~ 0
+75ohm
+Text Notes 7050 1550 0    100  ~ 20
+Differential Pair
+Wire Notes Line width 12 style solid
+	5550 1000 5550 5000
+Wire Notes Line width 12 style solid
+	9550 5000 9550 1000
+Wire Notes Line width 12 style solid
+	5550 1000 9550 1000
+Wire Notes Line width 12 style solid
+	5550 5000 9550 5000
+Wire Wire Line
+	6900 3250 8950 3250
+Wire Wire Line
+	6900 3650 8950 3650
+Wire Wire Line
+	6900 2450 8950 2450
+Wire Wire Line
+	6900 2050 8950 2050
 $EndSCHEMATC

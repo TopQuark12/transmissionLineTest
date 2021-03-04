@@ -1,0 +1,105 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Device_Jumper_NO_Small
+#
+DEF Device_Jumper_NO_Small JP 0 30 N N 1 F N
+F0 "JP" 0 80 50 H V C CNN
+F1 "Device_Jumper_NO_Small" 10 -60 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ SolderJumper*Open*
+ Jumper*
+ TestPoint*2Pads*
+ TestPoint*Bridge*
+$ENDFPLIST
+DRAW
+C -40 0 20 0 1 0 N
+C 40 0 20 0 1 0 N
+X 1 1 -100 0 40 R 50 50 0 1 P
+X 2 2 100 0 40 L 50 50 0 1 P
+ENDDRAW
+ENDDEF
+#
+# Transformer_ADT1-1WT
+#
+DEF Transformer_ADT1-1WT TR 0 20 Y N 1 F N
+F0 "TR" 0 250 50 H V C CNN
+F1 "Transformer_ADT1-1WT" 0 -275 50 H V C CNN
+F2 "RF_Mini-Circuits:Mini-Circuits_CD542_H2.84mm" 0 -350 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Mini?Circuits*CD542*
+$ENDFPLIST
+DRAW
+A -60 -90 30 -899 899 0 1 8 N -60 -120 -60 -60
+A -60 -30 30 -899 899 0 1 8 N -60 -60 -60 0
+A -60 30 30 -899 899 0 1 8 N -60 0 -60 60
+A -60 90 30 -899 899 0 1 8 N -60 60 -60 120
+A 60 -90 30 901 -901 0 1 8 N 60 -60 60 -120
+A 60 -30 30 901 -901 0 1 8 N 60 0 60 -60
+A 60 30 30 901 -901 0 1 8 N 60 60 60 0
+A 60 90 30 901 -901 0 1 8 N 60 120 60 60
+C -150 150 25 0 1 0 F
+C 150 150 25 0 1 0 F
+P 2 0 1 6 100 0 50 0 N
+P 3 0 1 6 -100 200 -60 200 -60 120 N
+P 3 0 1 6 -60 -120 -60 -200 -100 -200 N
+P 3 0 1 6 60 120 60 200 100 200 N
+P 3 0 1 6 100 -200 60 -200 60 -120 N
+X ~ 1 -200 -200 100 R 50 50 1 1 P
+X ~ 2 200 0 100 L 50 50 1 1 P
+X ~ 3 -200 200 100 R 50 50 1 1 P
+X ~ 4 200 -200 100 L 50 50 1 1 P
+X ~ 5 -100 0 100 R 50 50 1 1 N N
+X ~ 6 200 200 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# power_GND
+#
+DEF power_GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_PWR_FLAG
+#
+DEF power_PWR_FLAG #FLG 0 0 N N 1 F P
+F0 "#FLG" 0 75 50 H I C CNN
+F1 "power_PWR_FLAG" 0 150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 50 -40 75 0 100 40 75 0 50 N
+X pwr 1 0 0 0 U 50 50 0 0 w
+ENDDRAW
+ENDDEF
+#
+# symbols_Conn_01x01_Shielded
+#
+DEF symbols_Conn_01x01_Shielded J 0 40 Y N 1 F N
+F0 "J" 10 90 50 H V C CNN
+F1 "symbols_Conn_01x01_Shielded" 40 -90 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??-1SH*
+$ENDFPLIST
+DRAW
+S -50 50 50 -50 1 1 6 N
+S -40 5 10 -5 1 1 6 N
+S -40 40 40 -40 1 1 10 f
+X Pin_1 1 -200 0 160 R 50 50 1 1 P
+X Shield 2 0 -200 150 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library
